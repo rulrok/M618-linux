@@ -4,6 +4,10 @@
 
 Linux custom xbindkeys/xinput mapping for more ergonomic usage of M618 vertical mouse series.
 
+- [x] Basic re-mapping
+- [x] `.xprofile` to make it work on X11 independent of desktop manager
+- [ ] Keep scrolling while holding right-sideway buttons
+
 ## Maximum confort
 
 If you are using a vertical mouse, chances are that you are trying to avoid Carpal Tunnel Syndrome.
