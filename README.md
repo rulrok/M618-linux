@@ -1,3 +1,5 @@
+![Mouse image](./mouse.jpg)
+
 # M618 linux ergonomic button mapping
 
 Linux custom xbindkeys/xinput mapping for more ergonomic usage of M618 vertical mouse series.
