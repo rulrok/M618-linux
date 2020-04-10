@@ -1,6 +1,12 @@
 #!/bin/bash
 
 mouse_id=$(xinput list --short | grep "USB OPTICAL MOUSE" | grep -oP "(?<=id=)(\d+)")
-# left middle right up down --- --- back fwd
+
+# left middle right up down (not used) (not used) back fwd
 xinput set-button-map $mouse_id 4 2 5 9 8 0 0 1 3
-xinput set-prop $mouse_id "libinput Button Scrolling Button" 1
+
+# Define middle button as scrolling one (when holding)
+xinput set-prop $mouse_id "libinput Button Scrolling Button" 2
+
+# Enable scrolling while holding wheel button
+xinput set-prop $mouse_id "libinput Scroll Method Enabled" 0, 0, 1
